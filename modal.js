@@ -13,7 +13,7 @@ const divWinMsg = document.createElement('div');
 const body = document.querySelector('body');
 
 // Add div Pattern
-body.append(divWin);
+body.insertBefore(divWin,bt.nextElementSibling);
 
 //Add div Child
 divWin.append(divWinMsg);
@@ -26,4 +26,12 @@ divWinMsg.setAttribute('class', 'p-8 bg-white text-center rounded');
 
 // Add texto na div Child
 divWinMsg.innerText = "Tecle ESC para fechar";
+})
+
+const body = document.querySelector('body');
+document.addEventListener('keydown', (event) => {
+    if(event.key === 'Escape') {
+        const divp = bt.nextElementSibling
+        body.removeChild(divp)
+    }
 })
