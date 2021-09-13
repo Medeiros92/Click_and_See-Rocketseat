@@ -16,3 +16,6 @@ divWin.setAttribute('class', 'modal-wrapper invisible fixed bg-gray-500 w-screen
 
 //Add classe na div Child
 divWinMsg.setAttribute('class', 'p-8 bg-white text-center rounded');
+
+// Add texto na div Child
+divWinMsg.innerText = "Tecle ESC para fechar"
