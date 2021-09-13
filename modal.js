@@ -10,3 +10,9 @@ body.append(divWin);
 
 //Add div Child
 divWin.append(divWinMsg);
+
+// Add classe na div Pattern
+divWin.setAttribute('class', 'modal-wrapper invisible fixed bg-gray-500 w-screen h-screen flex items-center justify-center');
+
+//Add classe na div Child
+divWinMsg.setAttribute('class', 'p-8 bg-white text-center rounded');
