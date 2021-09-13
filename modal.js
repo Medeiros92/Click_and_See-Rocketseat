@@ -29,9 +29,17 @@ divWinMsg.innerText = "Tecle ESC para fechar";
 })
 
 const body = document.querySelector('body');
+
+//Função apaga Divs ao apertar tecla esc
 document.addEventListener('keydown', (event) => {
+    
+    // Se tecla difitada for esc
     if(event.key === 'Escape') {
+
+        //divp recebe elemento irmao de botao(divs)
         const divp = bt.nextElementSibling
-        body.removeChild(divp)
+
+        //remove divis
+        body.removeChild(divp);
     }
 })
